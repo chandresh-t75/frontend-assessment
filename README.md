@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# React App with Favourites Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple and responsive React application that fetches data from the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API using the `fetch` function, displays it in cards, allows users to add items to their favourites cart, provides a form to add new items, and uses toasts for notifications.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetch data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/photos) using the `fetch` function
+- Display items in responsive cards
+- Add items to the "favourites" cart
+- Form to add new items
+- Toast notifications for user feedback
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- React Router DOM
+- Tailwind CSS
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Run Locally
 
-### `npm test`
+1. **Clone the Repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/chandresh-t75/frontend-assessment.git
+    ```
 
-### `npm run build`
+2. **Navigate to the Project Directory:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd frontend-assessment
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install Dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4. **Start the Development Server:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Open in Browser:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Additional Libraries Used
 
-## Learn More
+- `axios` (or any other HTTP client library) for making API requests
+- [react-toastify](https://www.npmjs.com/package/react-toastify) for toast notifications
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Assumptions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The API endpoint is assumed to be [https://jsonplaceholder.typicode.com/photos](https://jsonplaceholder.typicode.com/photos).
+- Tailwind CSS is used for styling.
+- The application assumes a basic structure with components such as `Card`, `FavouritesCart`, and `NewItemForm`.
 
-### Code Splitting
+## Responsiveness
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application is designed to be responsive and accessible on various devices, providing a seamless user experience across different screen sizes.
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application can be deployed to a hosting service of your choice. Here are general steps for deployment:
 
-### Making a Progressive Web App
+1. **Build the Production Version:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```bash
+    npm run build
+    ```
 
-### Advanced Configuration
+2. **Choose a Hosting Service:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   You can use platforms like Netlify, Vercel, GitHub Pages, or any other hosting service of your choice.
 
-### Deployment
+3. **Deploy:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   Follow the deployment instructions provided by your chosen hosting service. Typically, you'll upload the build artifacts (located in the `build` directory) to the hosting service.
 
-### `npm run build` fails to minify
+4. **Access the Deployed App:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   Once deployed, your app will be accessible at the provided deployment URL.
+
+## Customize and Extend
+
+Feel free to customize and extend the application based on your specific requirements. You can modify styles, add more features, or integrate additional libraries as needed.
