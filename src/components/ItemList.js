@@ -18,7 +18,7 @@ const ItemList = ({post}) => {
 
 
   return (
-    <div className='flex flex-col  rounded-md gap-3 p-4 mt-10 ml-5 items-center justify-between hover:scale-105 transition-all duration-300 ease-in shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
+    <div className='flex flex-col  rounded-md gap-3 p-4 mt-10 ml-5 px-8 sm:p-4 items-center justify-between hover:scale-105 transition-all duration-300 ease-in shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] '>
          <div>
             <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1'>{post.title}</p>
          </div>

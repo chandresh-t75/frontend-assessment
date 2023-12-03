@@ -9,7 +9,7 @@ import { Route,Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App mb-10 ">
+    <div className=" w-full mb-10 ">
       <div>
       <Navbar/>
       
