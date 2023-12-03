@@ -17,7 +17,7 @@ const CartItem = ({item}) => {
         <div className='h-[120px]'>
             <img src={item.thumbnailUrl} alt="" className=' h-full'/>
         </div>
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-2 items-center text-center'>
             <h1 className='w-80 text-lg text-slate-700 font-semibold flex flex-wrap'>{item.title}</h1>
            
             <div className='flex justify-between'>

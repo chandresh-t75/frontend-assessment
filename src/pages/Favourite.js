@@ -13,7 +13,7 @@ const Favourite = () => {
             {
                 favourite.length> 0 ?
                     (
-                        <div className='flex flex-row  justify-center mx-auto gap-8 flex-wrap   '>
+                        <div className='flex flex-row  justify-center mx-auto gap-8 flex-wrap '>
                              <div className=' '>
                                 {
                                     favourite.map((item,index)=>{
@@ -23,8 +23,8 @@ const Favourite = () => {
                              </div>
                              <div className='flex flex-col justify-between mt-10'>
                                   <div>
-                                    <h1 className='text-green-700 font-bold uppercase text-[14px]'>Your Favourite</h1>
-                                    <h1 className='text-3xl font-semibold text-green-600 uppercase'>Summary</h1>
+                                    <h1 className='text-blue-700 font-bold uppercase text-[14px]'>Your Favourite</h1>
+                                    <h1 className='text-3xl font-semibold text-blue-600 uppercase'>Summary</h1>
                                     <p className='text-[14px] pt-2'>
                                         <span >Total Items:{favourite.length}</span>
                                     </p>
@@ -38,7 +38,7 @@ const Favourite = () => {
                     (
                         <div className='absolute sm:top-[50%] sm:left-[44%] top-[50%] left-[30%] flex flex-col justify-center items-center gap-3 mx-auto'>
                             <h1 className='font-semibold '>Favourite Empty</h1>
-                            <Link to="/"><button className='bg-green-600 py-2 px-4  text-white rounded-md'>Add to Favourites</button></Link>
+                            <Link to="/"><button className='bg-blue-600 py-2 px-4  text-white rounded-md'>Add to Favourites</button></Link>
                         </div>
                     )
 

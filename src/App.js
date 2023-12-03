@@ -9,16 +9,18 @@ import { Route,Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className=" w-full mb-10 ">
-      <div>
+    <div className="mt-0 w-full mb-10 ">
+      <div >
       <Navbar/>
       
       </div>
+    
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/favourite" element={<Favourite/>}/>
         
       </Routes>
+    
         
     </div>
   );
